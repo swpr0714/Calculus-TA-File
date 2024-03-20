@@ -1,0 +1,104 @@
+\documentclass[12px]{article}
+\setlength{\parindent}{4em}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{pifont}
+\usepackage{float}
+\linespread{1.5}
+
+\begin{document}
+\begin{center}
+    \Large\textbf{Section 10.2 Calculus of Parametric Curves}
+\end{center}
+\begin{enumerate}
+    \item Parametric curves
+    \begin{enumerate}[(1)]
+        \item Cycloid
+        \begin{center}
+            \includegraphics*[width=6cm]{cycloid.png}\\
+        \end{center}\leavevmode\newline
+        \\
+        \\
+        \\
+        \\
+        \item Epicycloid
+        \begin{center}
+            \includegraphics*[width=5cm]{epicycloid.png}\\
+        \end{center}\leavevmode\newline
+        \\
+        \\
+        \\
+        \\
+    \end{enumerate}
+    \item Derivative of the parametric curves
+    \begin{enumerate}[(1)]
+        \item First derivative (Tangent)
+        $$f'(x,y)=\frac{dy}{dx}=\frac{dy/dt}{dx/dt}$$
+        \item Second derivative (Concavity)
+        $$f''(x,y)=\frac{d(\frac{dy/dt}{dx/dt})}{dx}=\frac{\frac{(d^2y/dt^2)(dx/dt)-(dy/dt)(d^2x/dt^2)}{(dx/dt)^2}}{d^2x/dt^2}$$
+    \end{enumerate}
+\newpage
+    \item Integrals of the parametric curves
+    \begin{enumerate}[(1)]
+        \item Area
+        $$A=\int_a^by\,dx=\int_a^bg(t)'f(t)\,dt$$
+        \item Arc length
+        $$ds=\sqrt{(dx)^2+(dy)^2}\,dt$$
+        $$\int_a^bds=\int_a^b\sqrt{(dx)^2+(dy)^2}\,dt$$
+    \end{enumerate}
+\end{enumerate}\leavevmode\newline
+\begin{multicols}{2}
+    \noindent\textbf{\textit{Example 1}}\\
+    Find the parametric from the spiral with pitch $p=2$, radius $r=10$ and height $h=40$.\\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \textbf{\textit{Example 2}}\\
+    Find the arc length of the curve $x=\frac{2}{3}t^3$, $y=t^2-2$, $0\leq t\leq 3$.\\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \textbf{\textit{Example 3}}\\
+    Find the exact area of the surface obtained by rotating $x=tsint$, $y=tcost$, $0\leq t\leq \frac{\pi}{2}$ about the x-axis.\\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \textbf{\textit{Exercise 1}}\\
+    Find the parametric from the cornical spiral with pitch $p=2$, radius $r=10$ and height $h=40$.\\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \textbf{\textit{Exercise 2}}\\
+    Find the arc length of the curve $x=3cost-cos3t$, $y=3sint-sin3t$, $0\leq t\leq \pi$.\\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \textbf{\textit{Exercise 3}}\\
+    Find the area of the region enclosed by the astroid $x=acos^3\theta$, $y=asin^3\theta$.\\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \\
+\end{multicols}
+
+\end{document}
