@@ -1,0 +1,125 @@
+\documentclass[12px]{article}
+\setlength{\parindent}{4em}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{pifont}
+\usepackage{float}
+\linespread{1.5}
+\begin{document}
+\begin{center}
+    \Large\textbf{Section 4.4 Curve Sketching and L'hospital's Rule}
+\end{center}
+\begin{enumerate}
+    \item \textbf{Curve Sketching}\\
+    \hspace*{2em}We've learned several methods to find the characteristics of the graph of a function in the previous sections. Now, we can try to illustrate the graph of the function base on this characteristics.\\
+    \hspace*{2em}To illustrate the graph of the function, we might need to find the following infomations:
+    \begin{multicols}{2}
+        \begin{enumerate}[(1)]
+            \item Domain
+            \item Critical point (f'(x))
+            \item Inflection point (f''(x))
+            \item Concavity (f''(x))
+            \item Asymptotes
+            \item Particular point
+        \end{enumerate}
+    \end{multicols}
+    \textbf{\textit{Example 1}}\\
+    Illustrate the graph of the function $y=\frac{x}{\sqrt{x^2-1}}$
+    \begin{enumerate}[(1)]
+        \item Domain:
+        \item Asymptotes:
+        \item Particular point:
+    \end{enumerate}
+    \begin{figure}[h]
+        \centering
+        \includegraphics*[width=20cm]{grid.jpg}
+    \end{figure}
+    \textbf{\textit{Exercise 1}}\\
+    Illustrate the graph of the function $y=\frac{x-x^2}{2-3x+x^2}$
+    \begin{enumerate}[(1)]
+        \item Domain:
+        \item Asymptotes:
+        \item Particular point:
+    \end{enumerate}
+    \newpage
+    \begin{figure}[h]
+        \centering
+        \includegraphics*[width=20cm]{grid.jpg}
+    \end{figure}
+    \item \textbf{L'Hospital's Rule}\\
+    \hspace*{2em}We've mentioned that there are 7 types of "Indeterminate form" as follows:
+    \begin{multicols}{4}
+        \begin{enumerate}[(1)]
+            \item Fraction: $\frac{0}{0}$, $\frac{\infty}{\infty}$
+            \item Product: $0*\infty$
+            \item Power: $0^0$, $1^\infty$, $\infty^0$
+            \item Subtraction: $\infty-\infty$
+        \end{enumerate}
+    \end{multicols}
+    \hspace*{2em}Now, we are going to introduce "L'Hospital's Rule" which can help us to find the limit of the indeterminate form.\\
+    \hspace*{2em}Suppose 
+    $\quad\left\{ 
+    \begin{aligned}
+        &\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\frac{0}{0}\ or\\ 
+        &\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\pm\frac{\infty}{\infty}
+    \end{aligned}
+    \right.\Rightarrow$
+    $\quad
+    \begin{aligned}
+        &\lim\limits_{x\to a}\frac{f(x)}{g(x)}\ ("\frac{0}{0}")\quad&\overset{L.H.}{=}\quad&\lim\limits_{x\to a}\frac{f'(x)}{g'(x)}\\
+        &\lim\limits_{x\to a}\frac{f(x)}{g(x)}\ ("\frac{\infty}{\infty}")\quad&\overset{L.H.}{=}\quad&\lim\limits_{x\to a}\frac{f'(x)}{g'(x)}
+    \end{aligned}$\\
+    \\
+    \textbf{Goal:} Transform all of the undeterminate forms into $\frac{0}{0}$ or $\frac{\infty}{\infty}$ and use L'Hospital Rule to solve the limit.\\
+    \\
+    \textbf{\textit{Example 1}}\\
+    Evaluate $\lim\limits_{x\to\infty}[x-x^2\ln{(\frac{1+x}{x})}]$\\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \textbf{\textit{Example 2}}\\
+    Evaluate $\lim\limits_{x\to0^+}\frac{x^x-1}{\ln(x)+x-1}$\\
+    \newpage
+    \textbf{\textit{Exercise 1}}\\
+    Evaluate $\lim\limits_{x\to\infty}(\frac{2x-3}{2x+5})^{2x+1}$\\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \textbf{\textit{Exercise 2}}\\
+    Evaluate $\lim\limits_{x\to0^+}(1-cosx)^{sinx}$\\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \textbf{\textit{Exercise 3}}\\
+    Evaluate $\lim\limits_{x\to0^+}\frac{1}{x}+\frac{1}{tanx}$\\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \\
+    \textbf{\textit{Exercise 4}}\\
+    Evaluate $\lim\limits_{x\to\infty}(1+\frac{a}{x})^{bx}$
+
+
+\end{enumerate}
+
+
+
+
+
+\end{document}

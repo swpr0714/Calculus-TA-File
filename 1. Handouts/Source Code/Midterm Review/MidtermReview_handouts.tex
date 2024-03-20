@@ -1,0 +1,188 @@
+\documentclass[12px]{article}
+\setlength{\parindent}{4em}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{pifont}
+\usepackage{float}
+\usepackage{ulem}
+\linespread{1.5}
+\begin{document}
+\begin{center}
+    \Large\textbf{Section 1-4 Midterm Review}
+\end{center}
+\begin{enumerate}
+    \item \textbf{Function}
+    \begin{enumerate}[(1)]
+        \item Exponential Function ($e\cong 2.7183$,\ $f(x)=e^x,\ f'(0)=e^0=1$)
+        \begin{multicols}{4}
+            \begin{enumerate}
+                \item $b^{x+y}=b^xb^y$
+                \item $b^{x-y}={b^x}{b^y}$
+                \item $(b^x)^y=b^{xy}$
+                \item $(ab)^x=a^xb^x$
+            \end{enumerate}
+        \end{multicols}
+        \item Logarithmic Function ($ln(x) \equiv log_e(x)$.) \textbf{Caution:} Should be written as $ln$ not $In$. \textbf{(Lowercase LN!)}
+        \begin{multicols}{4}
+            \begin{enumerate}
+                \item $\ln(xy)=\ln{x}+\ln{y}$
+                \item $\ln(\frac{x}{y})=\ln{x}-\ln{y}$
+                \item $\ln(x^r)=r\ln{x}$
+                \item $\ln(e^x)=x$
+            \end{enumerate}
+        \end{multicols}
+        \item Inverse Function ($f(x)=y \Leftrightarrow f^{-1}(y)=x$)\\
+        Step 1. Write $y=f(x)$.\\
+        Step 2. Solve the equation of $x$ in terms of $y$, then we can get $f^{-1}(y)=x$\\
+        Step 3. Express the $f^{-1}$ as a function of $x$. (As Required)
+        \item Inverse Trigonometric Function
+        \begin{align}
+            &y = sin^{-1}(x) \Rightarrow &&\text{Domain:}\ -1 \leq x \leq 1,\ &&\text{Range:}\ -\frac{\pi}{2}\leq y \leq\frac{\pi}{2}\nonumber\\
+            &y = cos^{-1}(x) \Rightarrow &&\text{Domain:}\ -1 \leq x \leq 1,\ &&\text{Range:}\quad\ \,0\ \leq y \leq\pi\nonumber\\
+            &y = tan^{-1}(x) \Rightarrow &&\text{Domain:}\quad x\in \mathbb{R},\ &&\text{Range:}\ -\frac{\pi}{2} \leq y \leq \frac{\pi}{2} \nonumber
+        \end{align}
+    \end{enumerate}
+
+
+    \item \textbf{Limit}
+    \begin{enumerate}[(1)]
+        \item One-side Limit and Existence\\
+        \hspace*{2em}If $\lim\limits_{x\to a^+}f(x) = \lim\limits_{x\to a^-}f(x)$, then we can say $\lim\limits_{x\to a}f(x)$ exist.
+        \item Asymptotes
+        \begin{enumerate}
+            \item Vertical Asymptotes: Find the $x$ in the domain of $f(x)$ such that $y$ approach $\pm\infty$.
+            \item Horizontal Asymptotes: Check if $f(x)$ approach constant as $x$ approaches $\pm\infty$.
+            \item Slant Asymptotes: Factorize the fraction and check if $f(x)$ approach a specific linear function $g(x)$ \\
+            as $x$ approach $\pm\infty$.
+        \end{enumerate}
+        \item Calculation
+        \begin{enumerate}
+            \item Direct Substitutions: The most intuitive way, just substitute x into the approaching value. 
+            \item Fractional Reduction: Factorize or Reduce the fraction then use the substitution. 
+            \item Absolute \& Peicewise Function:\\
+            E.g.: Guassian Floor or Ceiling Function, Heaviside Unit Step Function.\\
+            Discuss different interval using one-side limit.
+            \item Squeeze Theorem: \\
+            If $g(x)\leq f(x)\leq h(x)$ and $\lim\limits_{x\to a}g(x)=\lim\limits_{x\to a}h(x)=L$, then $\lim\limits_{x\to a}f(x)=L$\\
+            Hint: Think of the Squeeze theorem whlie dealing with the limit of trigonometric Function.
+            \item L'Hospital Rule: Using to deal with the limit of undeterminate form.\\
+            \\
+            Suppose 
+            $\quad\left\{ 
+            \begin{aligned}
+                &\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\frac{0}{0}\ or\\ 
+                &\lim\limits_{x\to a}\frac{f(x)}{g(x)}=\pm\frac{\infty}{\infty}
+            \end{aligned}
+            \right.\Rightarrow$
+            $\quad
+            \begin{aligned}
+                &\lim\limits_{x\to a}\frac{f(x)}{g(x)}\ ("\frac{0}{0}")\quad&\overset{L.H.}{=}\quad&\lim\limits_{x\to a}\frac{f'(x)}{g'(x)}\\
+                &\lim\limits_{x\to a}\frac{f(x)}{g(x)}\ ("\frac{\infty}{\infty}")\quad&\overset{L.H.}{=}\quad&\lim\limits_{x\to a}\frac{f'(x)}{g'(x)}
+            \end{aligned}$\\
+            \\
+            Type of undeterminate form:
+            \begin{enumerate}[(1)]
+                \item Fraction: $\frac{0}{0}$, $\frac{\infty}{\infty}$ (Use L'Hospital Rule directly)
+                \item Product: $0\cdot\infty$ (Move $0$ or $\infty$ to the denomenator to form $\frac{0}{0}$ or $\frac{\infty}{\infty}$)
+                \item Power: $0^0$, $1^\infty$, $\infty^0$ (Try to use Natural Log (ln) to form $\frac{0}{0}$ or $\frac{\infty}{\infty}$)
+                \item Subtraction: $\infty-\infty$ (Reduce or Factorize the Square root or Fraction to form $\frac{0}{0}$ or $\frac{\infty}{\infty}$)
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+
+    \item \textbf{Continuity}
+    \begin{enumerate}[(1)]
+        \item Definition
+        \begin{multicols}{3}
+            \begin{enumerate}
+                \item $\lim\limits_{x\to a}f(x)$ exist.
+                \item $f(a)$ is defined.
+                \item $\lim\limits_{x\to a}f(x)=f(a)$
+            \end{enumerate}
+        \end{multicols}
+        \item Type of Discontinuity
+        \begin{multicols}{4}
+            \begin{enumerate}
+                \item Hole
+                \item Infinity
+                \item Break
+                \item Oscillation
+            \end{enumerate}
+        \end{multicols}
+    \end{enumerate}
+    \item \textbf{Derivative}
+    \begin{enumerate}[(1)]
+        \item Definition\\
+        If $\lim\limits_{x\to a^+}\frac{f(x)-f(a)}{x-a}=\lim\limits_{x\to a^-}\frac{f(x)-f(a)}{x-a}\text{, then } f'(x)=\lim\limits_{x\to a}\frac{f(x)-f(a)}{x-a}$
+        \item Common Derivative
+        \begin{multicols}{3}
+            \begin{enumerate}
+                \item $\frac{d}{dx}\ (Constant)=0$
+                \item $\frac{d}{dx}\ (x^n)=nx^{n-1}$
+                \item $\frac{d}{dx}\ (e^x)=e^x$
+                \item $\frac{d}{dx}\ (\log_n{x})=\frac{1}{x\ln{n}}$
+                \item $\frac{d}{dx}\ (\ln{x})=\frac{1}{x}$
+                \item $\frac{d}{dx}\ (sinx)=cosx$
+                \item $\frac{d}{dx}\ (cosx)=-sinx$
+                \item $\frac{d}{dx}\ (tanx)=sec^2x$
+                \item $\frac{d}{dx}\ (secx)=secx\cdot tanx$
+            \end{enumerate}
+        \end{multicols}
+        \item Product Rule and Quotient Rule
+        \begin{enumerate}
+            \item Product Rule: $\frac{d}{dx}[f(x)\cdot g(x)]=f'(x)g(x)+f(x)g'(x)$
+            \item Quotient Rule: $\frac{d}{dx}[\frac{f(x)}{g(x)}]=\frac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^2}$
+        \end{enumerate}
+        \item Chain Rule: Treat the function as a composite function and differentiate layer by layer.\\
+        $\frac{d}{dx}\ f(g(h(x)))=f'(g(h(x)))\cdot g'(h(x))\cdot h'(x)$
+        \item Differentiation in graphics
+        \begin{enumerate}
+            \item First derivatie $f'(x)\Rightarrow$ Slope of tangent $\equiv$ Rate of change. ($=0\Rightarrow$ Critical Point)
+            \item First derivatie $f'(x)\Rightarrow$ Concavity of the function. ($=0\Rightarrow$ Inflection Point)
+        \end{enumerate}
+        \newpage
+        \item Implicit Differentiation\\
+        Process: Derivative the equation, rearrange the equation into the form $y'(x)=\cdots$
+        \item Mean Value Theorem\\
+        If $f(x)$ is continuous on $[a,b]$ and differentiable on $(a,b)$, then there exist $c$, s.t. $f'(c)=\frac{f(b)-f(a)}{b-a}$. 
+        \item Application
+        \begin{enumerate}
+            \item Rate of Change: Tangent Slope, $f'(x)=\lim\limits_{\Delta x\to 0}\frac{\Delta y}{\Delta x}$
+            \item Linear Approximation: $f(x)\cong f(a)+f'(a)(x-a)$
+            \item Related Error: $\frac{\Delta y}{y}\cong \frac{dy}{y}$
+            \item Maximum, Minimum and Optimization\\
+            \\
+            $\left\{
+            \begin{aligned}
+                    \text{Local Maximum\ (L.M.)}\\
+                    \text{Local Minimum\ (L.m.)} 
+                \end{aligned}
+            \right. \Rightarrow$ Occur while $f'(x)=0$ or D.N.E.\\
+            $\left\{
+            \begin{aligned}
+                    \text{Absolute Maximum\ (A.M.)}\\
+                    \text{Absolute Minimum\ (A.m.)} 
+                \end{aligned}
+            \right. \Rightarrow$ Occur at Local 
+            $\left( \begin{aligned}
+                \text{Maximum}\\
+                \text{Minimum}
+            \end{aligned}\right)$
+            or End points\\
+            \\
+            \\
+            Procedure of Optimization:
+            \begin{enumerate}[{[1]}]
+                \item Comprehend the question
+                \item List the equation
+                \item Find the A.M. or A.m. to solve the question(Check $1^{\text{st}}$ Derivative and the End Points.)
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+\end{document}
