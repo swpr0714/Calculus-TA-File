@@ -1,8 +1,8 @@
 ﻿# README
 
-This is the repostory for the Calculus TA Class Handouts
+This is the repostory for the 112-1/112-2 CE Calculus TA Class Handouts.
 
-The source LaTeX code and image file could be found in the **"Source Code"** folder
+The LaTeX source code and image file could be found in the **["Source Code"](https://github.com/swpr0714/Calculus-TA-Handouts/tree/main/Source%20Code)** folder.
 
 The file is for viewing only. Please do not use it for other purposes without authorization.
 
